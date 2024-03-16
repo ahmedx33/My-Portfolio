@@ -1,0 +1,17 @@
+.gridaia {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 4rem;
+}
+
+
+.centering {
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.d-1a:hover .d-2a {
+    scale: 1;
+} 

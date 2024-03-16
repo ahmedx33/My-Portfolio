@@ -1,0 +1,43 @@
+ul li {
+    position: relative;
+}
+
+ul li::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    transition: 0.4s;
+    transform: scale(0);
+    opacity: 0;
+}
+
+ul li:hover::before {
+    transform: scale(100%);
+    opacity: 1;
+}
+
+
+
+.after-loading {
+    transform: translateY(800px);
+    animation: push-up 0.5s forwards 1s;
+}
+
+
+
+@keyframes push-up {
+    from {
+        transform: translateY(800px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
