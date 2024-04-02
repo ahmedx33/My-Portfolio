@@ -3,7 +3,7 @@ import DynmicLi from "./components/DynmicLi"
 import { Outlet } from "react-router-dom"
 
 export default function RootLayout() {
-    const links = ["projects", "about", "contcat"]
+    const links = ["projects", "about", "concat"]
     return (
         <div>
             <div className="flex items-center justify-between py-5 px-20 text-[1.8rem] h-fit relative">
