@@ -1,4 +1,4 @@
-p p {
+/* p p {
     width: fit-content;
     height: fit-content;
     display: inline-block;
@@ -11,70 +11,52 @@ p p:hover {
     animation: shrink 0.5s ease-in-out;
     color: #5865f2;
 
+} */
+
+p p {
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+    color: gray;
+    font-size: 6rem;
+    transition: all 0.3s;
+    display: inline-block;
 }
 
-@keyframes shrink {
-    0% {
+p p:hover {
+    animation: shrinking 1s;
+    color: #5865f2;
+}
+
+@keyframes shrinking {
+    from {
         transform: scale3d(1, 1, 1);
-        -webkit-transform: scale3d(1, 1, 1);
-        -moz-transform: scale3d(1, 1, 1);
-        -ms-transform: scale3d(1, 1, 1);
-        -o-transform: scale3d(1, 1, 1);
     }
 
-    25% {
-        transform: scale3d(1, 0.7, 1);
-        -webkit-transform: scale3d(1, 0.7, 1);
-        -moz-transform: scale3d(1, 0.7, 1);
-        -ms-transform: scale3d(1, 0.7, 1);
-        -o-transform: scale3d(1, 0.7, 1);
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
     }
 
-    35% {
-        transform: scale3d(1, 0.9, 1);
-        -webkit-transform: scale3d(1, 0.9, 1);
-        -moz-transform: scale3d(1, 0.9, 1);
-        -ms-transform: scale3d(1, 0.9, 1);
-        -o-transform: scale3d(1, 0.9, 1);
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
     }
 
-    45% {
-        transform: scale3d(1, 1.2, 1);
-        -webkit-transform: scale3d(1, 1.2, 1);
-        -moz-transform: scale3d(1, 1.2, 1);
-        -ms-transform: scale3d(1, 1.2, 1);
-        -o-transform: scale3d(1, 1.2, 1);
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
     }
 
-    55% {
-        transform: scale3d(1, 1.4, 1);
-        -webkit-transform: scale3d(1, 1.4, 1);
-        -moz-transform: scale3d(1, 1.4, 1);
-        -ms-transform: scale3d(1, 1.4, 1);
-        -o-transform: scale3d(1, 1.4, 1);
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
     }
 
-    70% {
-        transform: scale(1, 0.9, 1);
-        -webkit-transform: scale(1, 0.9, 1);
-        -moz-transform: scale(1, 0.9, 1);
-        -ms-transform: scale(1, 0.9, 1);
-        -o-transform: scale(1, 0.9, 1);
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
     }
 
-    80% {
-        transform: scale(1, 0.7, 1);
-        -webkit-transform: scale(1, 0.7, 1);
-        -moz-transform: scale(1, 0.7, 1);
-        -ms-transform: scale(1, 0.7, 1);
-        -o-transform: scale(1, 0.7, 1);
-    }
-
-    100% {
+    to {
         transform: scale3d(1, 1, 1);
-        -webkit-transform: scale3d(1, 1, 1);
-        -moz-transform: scale3d(1, 1, 1);
-        -ms-transform: scale3d(1, 1, 1);
-        -o-transform: scale3d(1, 1, 1);
     }
 }
